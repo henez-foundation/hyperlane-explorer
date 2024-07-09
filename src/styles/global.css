@@ -201,3 +201,25 @@ Toasts
   --toastify-color-progress-warning: var(--toastify-color-warning);
   --toastify-color-progress-error: var(--toastify-color-error);
 }
+
+#timeline-card {
+  & > div > div > div > div.htw-absolute.htw--top-12.htw-flex.htw-flex-col.htw-items-center > div.htw-h-9.htw-w-9.htw-flex.htw-items-center.htw-justify-center.htw-rounded-full.htw-bg-blue-500,
+  & > div > div > div > div.htw-absolute.htw--top-12.htw-flex.htw-flex-col.htw-items-center > div.htw-w-0\.5.htw-h-4.htw-bg-blue-500 {
+    background-color: #019E79;
+  }
+  & > div > div > div > div.htw-absolute.htw--right-3.htw-top-0.htw-h-6 > svg > path {
+    fill: #019E79;
+  }
+
+  & > div {
+    & > div > div {
+      background-color: #019E79;
+    }
+    & > div > h4 {
+      color: #f1f1f1;
+    }
+    & > div > p {
+      color: #818181;
+    }
+  }
+}

@@ -39,7 +39,7 @@ export function Header({ pathName }: { pathName: string }) {
   return (
     <header
       className={`z-30 sticky top-0 px-2 sm:px-6 lg:px-12 w-full bg-[#141C22] transition-all ease-in-out duration-500 ${
-        animateHeader ? 'py-1 border-b border-white' : 'py-4 sm:py-5'
+        animateHeader ? 'py-1 border-b border-[#384B58]' : 'py-4 sm:py-5'
       }`}
     >
       <div className="flex items-center justify-between">
@@ -125,7 +125,7 @@ export function Header({ pathName }: { pathName: string }) {
 
 function DropdownButton({ isOpen }: { isOpen: boolean }) {
   return (
-    <div className="px-4 py-1 flex flex-col items-center border border-white bg-[#019E79] rounded-lg">
+    <div className="px-4 py-1 flex flex-col items-center border border-[#384B58] bg-[#019E79] rounded-lg">
       <HyperlaneWideChevron
         width={10}
         height={14}

@@ -27,20 +27,20 @@ export function MessageTable({
   return (
     <table className="w-full mb-1 text-[#F1F1F1]">
       <thead>
-        <tr className="border-b border-gray-100 ">
-          <th className={`${styles.header} xs:text-left pl-3 sm:pl-6 text-[#818181]`}>Origin</th>
-          <th className={`${styles.header} xs:text-left pl-1 sm:pl-2 text-[#818181]`}>Destination</th>
-          <th className={`${styles.header} hidden sm:table-cell text-[#818181]`}>Sender</th>
-          <th className={`${styles.header} hidden sm:table-cell text-[#818181]`}>Recipient</th>
-          <th className={`${styles.header} hidden lg:table-cell text-[#818181]`}>Origin Tx</th>
-          <th className={`${styles.header} text-[#818181]`}>Time sent</th>
+        <tr className="border-b border-[#384B58] ">
+          <th className={`${styles.header} xs:text-left pl-3 sm:pl-6 !text-[#818181]`}>Origin</th>
+          <th className={`${styles.header} xs:text-left pl-1 sm:pl-2 !text-[#818181]`}>Destination</th>
+          <th className={`${styles.header} hidden sm:table-cell !text-[#818181]`}>Sender</th>
+          <th className={`${styles.header} hidden sm:table-cell !text-[#818181]`}>Recipient</th>
+          <th className={`${styles.header} hidden lg:table-cell !text-[#818181]`}>Origin Tx</th>
+          <th className={`${styles.header} !text-[#818181]`}>Time sent</th>
         </tr>
       </thead>
       <tbody>
         {messageList.map((m) => (
           <tr
             key={`message-${m.id}`}
-            className={`relative cursor-pointer hover:bg-pink-50 active:bg-pink-100 border-b border-blue-50 last:border-0 ${
+            className={`relative cursor-pointer hover:bg-[#2B3943] active:bg-pink-100 border-b border-[#384B58] last:border-0 ${
               isFetching && 'blur-xs'
             } transition-all duration-500`}
           >

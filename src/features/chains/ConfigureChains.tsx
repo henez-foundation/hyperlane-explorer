@@ -55,15 +55,15 @@ export function ConfigureChains() {
   };
 
   return (
-    <Card>
-      <h2 className="mt-1 text-lg text-blue-500 font-medium">Chain Settings</h2>
+    <Card className='text-[#f1f1f1]'>
+      <h2 className="mt-1 text-lg font-medium">Chain Settings</h2>
       <p className="mt-3 font-light">
         Hyperlane can be deployed to any chain using{' '}
         <a
           href={docLinks.pi}
           target="_blank"
           rel="noopener noreferrer"
-          className="underline underline-offset-2 text-blue-500 hover:text-blue-400"
+          className="underline-none text-[#5B8DEF]"
         >
           Permissionless Interoperability (PI)
         </a>
@@ -75,13 +75,13 @@ export function ConfigureChains() {
           href={docLinks.registry}
           target="_blank"
           rel="noopener noreferrer"
-          className="underline underline-offset-2 text-blue-500 hover:text-blue-400"
+          className="underline-none text-[#5B8DEF]"
         >
           canonical Hyperlane Registry
         </a>
         . Or use the section below to add it for just your own use.
       </p>
-      <h3 className="mt-6 text-lg text-blue-500 font-medium">Custom Chains</h3>
+      <h3 className="mt-6 text-lg font-medium">Custom Chains</h3>
       <table className="mt-2 w-full">
         <thead>
           <tr>
@@ -136,7 +136,7 @@ export function ConfigureChains() {
             href={docLinks.pi}
             target="_blank"
             rel="noopener noreferrer"
-            className="underline underline-offset-2 text-blue-500 hover:text-blue-400"
+            className="underline-none text-blue-500 hover:text-blue-400"
           >
             PI Explorer documentation
           </a>{' '}

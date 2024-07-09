@@ -2,6 +2,8 @@ import Image from 'next/image';
 import { useEffect } from 'react';
 import { toast } from 'react-toastify';
 
+
+
 import { toTitleCase, trimToLength } from '@hyperlane-xyz/utils';
 
 import { Spinner } from '../../components/animations/Spinner';
@@ -95,7 +97,7 @@ export function MessageDetails({ messageId, message: messageFromUrlParams }: Pro
   return (
     <>
       <Card className="flex items-center justify-between px-1 rounded-full">
-        <h2 className="text-blue-500 font-medium">{`${
+        <h2 className="text-[#f1f1f1] font-medium">{`${
           isIcaMsg ? 'ICA ' : ''
         } Message ${trimToLength(msgId, 6)} to ${getChainDisplayName(
           multiProvider,
@@ -108,7 +110,7 @@ export function MessageDetails({ messageId, message: messageFromUrlParams }: Pro
           isError={isError}
         />
       </Card>
-      <div className="flex flex-wrap items-stretch justify-between mt-3 md:mt-4 gap-3 md:gap-4">
+      <div className="flex flex-wrap items-stretch justify-between mt-3 md:mt-4 gap-3 md:gap-4 text-[#f1f1f1]">
         <OriginTransactionCard
           chainId={originChainId}
           domainId={originDomainId}
@@ -179,7 +181,7 @@ function StatusHeader({
 
   return (
     <div className="flex items-center">
-      <h3 className="text-blue-500 font-medium lg mr-3">{text}</h3>
+      <h3 className="text-[#f1f1f1] font-medium lg mr-3">{text}</h3>
       {icon}
     </div>
   );

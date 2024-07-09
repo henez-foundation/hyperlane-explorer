@@ -1,12 +1,14 @@
 import { ChangeEvent } from 'react';
 
+
 interface Props {
   timestamp: number | null;
   onChange: (t: number | null) => void;
   name?: string;
+  className?: string;
 }
 
-export function DatetimeField({ timestamp, onChange, name }: Props) {
+export function DatetimeField({ timestamp, onChange, name, className }: Props) {
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (!e.target['validity'].valid) {
       onChange(null);
@@ -23,7 +25,7 @@ export function DatetimeField({ timestamp, onChange, name }: Props) {
       value={toShortIsoString(timestamp)}
       onChange={handleChange}
       name={name}
-      className="-ml-px"
+      className={`${className} -ml-px`}
     />
   );
 }

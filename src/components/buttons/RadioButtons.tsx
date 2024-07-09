@@ -9,7 +9,7 @@ interface Props {
 
 export function RadioButtons({ options, selected, onChange, label }: Props) {
   return (
-    <div className="rounded border border-gray-200 overflow-hidden">
+    <div className="rounded border border-[#384B58] overflow-hidden">
       <RadioGroup value={selected} onChange={onChange}>
         {label && <RadioGroup.Label className="sr-only">{label}</RadioGroup.Label>}
         <div className="flex items-center divide-x">
@@ -18,7 +18,7 @@ export function RadioButtons({ options, selected, onChange, label }: Props) {
               key={o.value}
               value={o.value}
               className={({ checked }) =>
-                `${checked ? 'bg-[#019E79] hover:bg-blue-400' : 'bg-white hover:bg-gray-100'}
+                `${checked ? 'bg-[#019E79] hover:bg-blue-400' : 'bg-transparent hover:bg-gray-100'}
                     relative flex cursor-pointer px-2 py-1.5 outline-none`
               }
             >

@@ -177,7 +177,7 @@ function TransactionCard({
           <ChainLogo chainId={chainId} />
         </div>
         <div className="flex items-center pb-1">
-          <h3 className="text-blue-500 font-medium text-md mr-2">{title}</h3>
+          <h3 className="text-[#f1f1f1] font-medium text-md mr-2">{title}</h3>
           <HelpIcon size={16} text={helpText} />
         </div>
       </div>

@@ -16,7 +16,7 @@ export function AppLayout({ pathName, children }: PropsWithChildren<Props>) {
       <Head>
         {/* https://nextjs.org/docs/messages/no-document-viewport-meta */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{`Hyperlane Explorer | ${getHeadTitle(pathName)}`}</title>
+        <title>{`Hyperlane Explorer For Henez | ${getHeadTitle(pathName)}`}</title>
       </Head>
       <div
         style={styles.container}
@@ -25,7 +25,7 @@ export function AppLayout({ pathName, children }: PropsWithChildren<Props>) {
         {/* <InfoBanner /> */}
         <Header pathName={pathName} />
         <div className="max-w-5xl mx-auto grow">
-          <main style={styles.main} className="relative min-h-full pt-3 z-20">
+          <main style={styles.main} className="relative min-h-full pt-3 z-20 mb-8">
             {children}
           </main>
         </div>

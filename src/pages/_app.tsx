@@ -47,7 +47,7 @@ export default function App({ Component, router, pageProps }: AppProps) {
         </UrqlProvider>
       </QueryClientProvider>
       <ToastContainer transition={Zoom} position={toast.POSITION.BOTTOM_RIGHT} limit={2} />
-      <Tooltip id="root-tooltip" className="z-50" />
+      <Tooltip id="root-tooltip" className="z-50 !bg-[#384B58] text-white" />
     </ErrorBoundary>
   );
 }

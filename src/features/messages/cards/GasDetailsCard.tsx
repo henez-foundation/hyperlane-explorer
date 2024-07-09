@@ -74,7 +74,7 @@ export function GasDetailsCard({ message, blur, igpPayments = {} }: Props) {
       <div className="flex items-center justify-between">
         <Image src={FuelPump} width={24} height={24} alt="" className="opacity-80" />
         <div className="flex items-center pb-1">
-          <h3 className="text-blue-500 font-medium text-md mr-2">Interchain Gas Payments</h3>
+          <h3 className="text-[#f1f1f1] font-medium text-md mr-2">Interchain Gas Payments</h3>
           <HelpIcon
             size={16}
             text="Amounts paid to the Interchain Gas Paymaster for message delivery."

@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
 
+
+
 import { ChainMetadata } from '@hyperlane-xyz/sdk';
 import { arrayToObject } from '@hyperlane-xyz/utils';
 
@@ -168,14 +170,17 @@ function ChainMultiSelector({
       }
       buttonClasses="text-sm sm:min-w-[5.8rem] px-1 sm:px-2.5 py-0.5 flex items-center justify-center rounded-full bg-[#019E79] hover:opacity-80 active:opacity-70 transition-all"
       modalContent={(closeDropdown) => (
-        <div className="p-4">
+        <div className="p-4 bg-[#2B3943] rounded-md border-[#384B58]">
           <div className="flex items-center justify-between">
-            <h3 className="font-medium text-blue-500">{header}</h3>
+            <h3 className="font-medium text-[#F1F1F1]">{header}</h3>
             <div className="flex mr-4">
-              <TextButton classes="text-sm font-medium text-pink-500" onClick={onToggleAll}>
+              <TextButton classes="text-sm font-medium text-[#019E79]" onClick={onToggleAll}>
                 All
               </TextButton>
-              <TextButton classes="ml-3.5 text-sm font-medium text-pink-500" onClick={onToggleNone}>
+              <TextButton
+                classes="ml-3.5 text-sm font-medium text-[#019E79]"
+                onClick={onToggleNone}
+              >
                 None
               </TextButton>
             </div>
@@ -188,7 +193,7 @@ function ChainMultiSelector({
                   onToggle={onToggleSection(mainnets)}
                   name="mainnet-chains"
                 >
-                  <h4 className="ml-2 text-gray-800">Mainnet Chains</h4>
+                  <h4 className="ml-2 text-[#F1F1F1]">Mainnet Chains</h4>
                 </CheckBox>
               </div>
               {mainnets.map((c) => (
@@ -199,7 +204,7 @@ function ChainMultiSelector({
                   name={c.name}
                 >
                   <div className="py-0.5 ml-2 text-sm flex items-center">
-                    <span className="mr-2 font-light">
+                    <span className="mr-2 font-light text-[#E6F5F2]">
                       {getChainDisplayName(multiProvider, c.chainId, true)}
                     </span>
                     <ChainLogo chainId={c.chainId} size={12} background={false} />
@@ -215,7 +220,7 @@ function ChainMultiSelector({
                   onToggle={onToggleSection(testnets)}
                   name="testnet-chains"
                 >
-                  <h4 className="ml-2 text-gray-800">Testnet Chains</h4>
+                  <h4 className="ml-2 text-[#F1F1F1]">Testnet Chains</h4>
                 </CheckBox>
               </div>
               {testnets.map((c) => (
@@ -226,7 +231,7 @@ function ChainMultiSelector({
                   name={c.name}
                 >
                   <div className="py-0.5 ml-2 text-sm flex items-center">
-                    <span className="mr-2 font-light">
+                    <span className="mr-2 font-light text-[#E6F5F2]">
                       {getChainDisplayName(multiProvider, c.chainId, true)}
                     </span>
                     <ChainLogo chainId={c.chainId} size={12} background={false} />
@@ -290,20 +295,28 @@ function DatetimeSelector({
       }
       buttonClasses="text-sm px-1 sm:px-2.5 py-0.5 flex items-center justify-center rounded-full bg-[#019E79] hover:opacity-80 active:opacity-70 transition-all"
       modalContent={(closeDropdown) => (
-        <div className="p-4" key="date-time-selector">
+        <div className="p-4 bg-[#2B3943] rounded-md border-[#384B58]" key="date-time-selector">
           <div className="flex items-center justify-between">
-            <h3 className="text-blue-500 font-medium">Time Range</h3>
+            <h3 className="text-[#F1F1F1] font-medium">Time Range</h3>
             <div className="flex pt-1">
-              <TextButton classes="text-sm font-medium text-pink-500" onClick={onClickClear}>
+              <TextButton classes="text-sm font-medium text-[#019E79]" onClick={onClickClear}>
                 Clear
               </TextButton>
             </div>
           </div>
           <div className="flex flex-col">
-            <h4 className="mt-3 mb-1 text-gray-500 text-sm font-medium">Start Time</h4>
-            <DatetimeField timestamp={startTime} onChange={setStartTime} />
-            <h4 className="mt-3 mb-1 text-gray-500 text-sm font-medium">End Time</h4>
-            <DatetimeField timestamp={endTime} onChange={setEndTime} />
+            <h4 className="mt-3 mb-1 text-[#F1F1F1] text-sm font-medium">Start Time</h4>
+            <DatetimeField
+              timestamp={startTime}
+              onChange={setStartTime}
+              className="bg-transparent text-[#F1F1F1]"
+            />
+            <h4 className="mt-3 mb-1 text-[#F1F1F1] text-sm font-medium">End Time</h4>
+            <DatetimeField
+              timestamp={endTime}
+              onChange={setEndTime}
+              className="bg-transparent text-[#F1F1F1] "
+            />
           </div>
           <SolidButton
             classes="mt-4 text-sm px-2 py-1 w-full"
