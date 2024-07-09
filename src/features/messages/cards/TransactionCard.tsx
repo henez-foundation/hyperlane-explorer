@@ -68,6 +68,7 @@ export function DestinationTransactionCard({
   const isDestinationEvmChain = isEvmChain(multiProvider, chainId);
 
   let content: ReactNode;
+
   if (transaction) {
     content = (
       <TransactionDetails
@@ -273,8 +274,8 @@ function DeliveryStatus({ children }: PropsWithChildren<unknown>) {
 
 function CallDataModal({ debugResult }: { debugResult?: MessageDebugResult }) {
   const [isOpen, setIsOpen] = useState(false);
-  if (!debugResult?.calldataDetails) return null;
-  const { contract, handleCalldata, mailbox } = debugResult.calldataDetails;
+  // if (!debugResult?.calldataDetails) return null;
+  const { contract, handleCalldata, mailbox } = debugResult?.calldataDetails || {};
   return (
     <>
       <button onClick={() => setIsOpen(true)} className={`mt-5 ${styles.textLink}`}>
@@ -285,6 +286,7 @@ function CallDataModal({ debugResult }: { debugResult?: MessageDebugResult }) {
         title="Message Delivery Calldata"
         close={() => setIsOpen(false)}
         maxWidth="max-w-sm sm:max-w-md"
+        className="!bg-[#2B3943]"
       >
         <div className="mt-2 flex flex-col space-y-3.5">
           <p className="text-sm font-light">
@@ -348,5 +350,5 @@ const helpText = {
 
 const styles = {
   textLink:
-    'text-sm text-gray-500 hover:text-gray-600 active:text-[#7a7d81] underline underline-offset-1 transition-all',
+    'text-sm text-gray-500 hover:text-gray-600 active:text-[#7a7d81] underline-none transition-all',
 };

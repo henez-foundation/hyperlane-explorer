@@ -1,6 +1,8 @@
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, PropsWithChildren } from 'react';
 
+
+
 import XCircle from '../../images/icons/x-circle.svg';
 import { IconButton } from '../buttons/IconButton';
 
@@ -10,10 +12,17 @@ export function Modal({
   close,
   maxWidth,
   children,
-}: PropsWithChildren<{ isOpen: boolean; title: string; close: () => void; maxWidth?: string }>) {
+  className,
+}: PropsWithChildren<{
+  isOpen: boolean;
+  title: string;
+  close: () => void;
+  maxWidth?: string;
+  className?: string;
+}>) {
   return (
     <Transition appear show={isOpen} as={Fragment}>
-      <Dialog as="div" className="relative z-30" onClose={close}>
+      <Dialog as="div" className={`relative z-30 `} onClose={close}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -40,9 +49,9 @@ export function Modal({
               <Dialog.Panel
                 className={`w-full ${
                   maxWidth || 'max-w-xs'
-                } max-h-[90vh] transform overflow-auto rounded-xl bg-white px-4 py-4 text-left shadow-lg transition-all`}
+                } max-h-[90vh] transform overflow-auto rounded-xl bg-white px-4 py-4 text-left shadow-lg transition-all ${className} text-[#f1f1f1]`}
               >
-                <Dialog.Title as="h3" className="font-medium text-blue-500">
+                <Dialog.Title as="h3" className="font-medium text-[#f1f1f1]">
                   {title}
                 </Dialog.Title>
                 {children}
