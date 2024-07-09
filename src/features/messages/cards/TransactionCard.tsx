@@ -274,8 +274,8 @@ function DeliveryStatus({ children }: PropsWithChildren<unknown>) {
 
 function CallDataModal({ debugResult }: { debugResult?: MessageDebugResult }) {
   const [isOpen, setIsOpen] = useState(false);
-  // if (!debugResult?.calldataDetails) return null;
-  const { contract, handleCalldata, mailbox } = debugResult?.calldataDetails || {};
+  if (!debugResult?.calldataDetails) return null;
+  const { contract, handleCalldata, mailbox } = debugResult.calldataDetails;
   return (
     <>
       <button onClick={() => setIsOpen(true)} className={`mt-5 ${styles.textLink}`}>
