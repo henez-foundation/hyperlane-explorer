@@ -184,7 +184,7 @@ mailbox: 0x123...
 `;
 
 const styles = {
-  header: 'pt-2 pb-1 text-sm text-gray-700 font-normal text-left',
+  header: 'pt-2 pb-1 text-sm text-[#7a7d81] font-normal text-left',
   value: 'py-4 px-1 text-sm font-light',
   valueTruncated: 'py-4 text-sm font-light truncate',
 };

@@ -82,7 +82,7 @@ export function MessageSearch() {
       />
       <Card className="relative w-full min-h-[38rem] mt-4" padding="">
         <div className="px-2 pt-3.5 pb-3 sm:px-4 md:px-5 flex items-center justify-between">
-          <h2 className="w-min sm:w-fit pl-0.5 text-blue-500 font-medium">
+          <h2 className="w-min sm:w-fit pl-0.5 text-[#F1F1F1] font-medium">
             {!hasInput ? 'Latest Messages' : 'Search Results'}
           </h2>
           <SearchFilterBar

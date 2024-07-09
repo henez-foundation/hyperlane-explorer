@@ -29,7 +29,7 @@ export function SolidButton(props: PropsWithChildren<ButtonProps>) {
   const base = 'flex items-center justify-center rounded-full transition-all duration-500';
   let baseColors, onHover, onActive;
   if (color === 'blue') {
-    baseColors = 'bg-blue-500 text-white';
+    baseColors = 'bg-[#019E79] text-white';
     onHover = 'hover:bg-blue-600';
     onActive = 'active:bg-blue-700';
   } else if (color === 'pink') {

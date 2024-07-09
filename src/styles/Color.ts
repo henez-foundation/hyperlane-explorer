@@ -13,7 +13,7 @@ export enum Color {
 // such as in svg fills
 export function classNameToColor(className) {
   switch (className) {
-    case 'bg-blue-500':
+    case 'bg-[#019E79]':
       return Color.Blue;
     case 'bg-pink-500':
       return Color.Pink;

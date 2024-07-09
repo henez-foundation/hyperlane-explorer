@@ -61,7 +61,7 @@ export function SearchFilterBar({
         onChangeEndValue={onChangeEndTimestamp}
       />
       <Link href="/settings" title="View explorer settings">
-        <div className="p-1.5 bg-pink-500 rounded-full active:opacity-90 hover:rotate-90 transition-all">
+        <div className="p-1.5 bg-[#019E79] rounded-full active:opacity-90 hover:rotate-90 transition-all">
           <Image src={GearIcon} width={16} height={16} className="invert" alt="Settings" />
         </div>
       </Link>
@@ -166,7 +166,7 @@ function ChainMultiSelector({
           />
         </>
       }
-      buttonClasses="text-sm sm:min-w-[5.8rem] px-1 sm:px-2.5 py-0.5 flex items-center justify-center rounded-full bg-pink-500 hover:opacity-80 active:opacity-70 transition-all"
+      buttonClasses="text-sm sm:min-w-[5.8rem] px-1 sm:px-2.5 py-0.5 flex items-center justify-center rounded-full bg-[#019E79] hover:opacity-80 active:opacity-70 transition-all"
       modalContent={(closeDropdown) => (
         <div className="p-4">
           <div className="flex items-center justify-between">
@@ -288,7 +288,7 @@ function DatetimeSelector({
           />
         </>
       }
-      buttonClasses="text-sm px-1 sm:px-2.5 py-0.5 flex items-center justify-center rounded-full bg-pink-500 hover:opacity-80 active:opacity-70 transition-all"
+      buttonClasses="text-sm px-1 sm:px-2.5 py-0.5 flex items-center justify-center rounded-full bg-[#019E79] hover:opacity-80 active:opacity-70 transition-all"
       modalContent={(closeDropdown) => (
         <div className="p-4" key="date-time-selector">
           <div className="flex items-center justify-between">

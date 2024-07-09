@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { PropsWithChildren, useEffect, useState } from 'react';
 
+
+
 import { docLinks, links } from '../../consts/links';
 import Explorer from '../../images/logos/hyperlane-explorer.svg';
 import Logo from '../../images/logos/hyperlane-logo.svg';
@@ -10,6 +12,7 @@ import { Color } from '../../styles/Color';
 import { HyperlaneWideChevron } from '../icons/Chevron';
 import { DropdownMenu } from '../layout/Dropdown';
 import { MiniSearchBar } from '../search/MiniSearchBar';
+
 
 const PAGES_EXCLUDING_SEARCH = ['/', '/debugger'];
 
@@ -35,7 +38,7 @@ export function Header({ pathName }: { pathName: string }) {
 
   return (
     <header
-      className={`z-30 sticky top-0 px-2 sm:px-6 lg:px-12 w-full bg-blue-500 transition-all ease-in-out duration-500 ${
+      className={`z-30 sticky top-0 px-2 sm:px-6 lg:px-12 w-full bg-[#141C22] transition-all ease-in-out duration-500 ${
         animateHeader ? 'py-1 border-b border-white' : 'py-4 sm:py-5'
       }`}
     >
@@ -122,7 +125,7 @@ export function Header({ pathName }: { pathName: string }) {
 
 function DropdownButton({ isOpen }: { isOpen: boolean }) {
   return (
-    <div className="px-4 py-1 flex flex-col items-center border border-white bg-pink-500 rounded-lg">
+    <div className="px-4 py-1 flex flex-col items-center border border-white bg-[#019E79] rounded-lg">
       <HyperlaneWideChevron
         width={10}
         height={14}
@@ -157,7 +160,7 @@ function MobileNavLink({
   return (
     <Link
       href={href}
-      className="py-4 pl-3 flex items-center cursor-pointer hover:underline active:opacity-80 decoration-4 decoration-pink-500 underline-offset-[2px] transition-all"
+      className="py-4 pl-3 flex items-center cursor-pointer hover:underline active:opacity-80 decoration-4 decoration-[#019E79] underline-offset-[2px] transition-all"
       onClick={closeDropdown}
       rel={isExternal ? 'noopener noreferrer' : undefined}
       target={isExternal ? '_blank' : undefined}
@@ -169,7 +172,7 @@ function MobileNavLink({
 
 const styles = {
   navLink:
-    'flex items-center font-medium text-white tracking-wide hover:underline active:opacity-80 decoration-4 decoration-pink-500 underline-offset-[2px] transition-all',
+    'flex items-center font-medium text-white tracking-wide hover:underline active:opacity-80 decoration-4 decoration-[#019E79] underline-offset-[2px] transition-all',
   dropdownOption:
     'flex items-center cursor-pointer p-2 mt-1 rounded text-blue-500 font-medium hover:underline decoration-2 underline-offset-4 transition-all',
 };

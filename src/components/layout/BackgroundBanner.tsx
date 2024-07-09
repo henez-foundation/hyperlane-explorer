@@ -5,7 +5,7 @@ import { classNameToColor } from '../../styles/Color';
 
 export function BackgroundBanner() {
   const bannerClassName = useStore((s) => s.bannerClassName);
-  const colorClass = bannerClassName || 'bg-blue-500';
+  const colorClass = bannerClassName || 'bg-[#019E79]';
 
   return (
     <div

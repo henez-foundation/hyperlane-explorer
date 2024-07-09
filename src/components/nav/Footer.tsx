@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { docLinks, links } from '../../consts/links';
 // import FooterLine from '../../images/backgrounds/footer-line-desktop.svg';
 // import FooterLineMobile from '../../images/backgrounds/footer-line-mobile.svg';
-import FooterBg from '../../images/backgrounds/footer-bg.svg';
 import FooterTopBorder from '../../images/backgrounds/footer-top-border.svg';
 import { Color } from '../../styles/Color';
 import { Discord } from '../icons/Discord';
@@ -37,14 +36,14 @@ export function Footer() {
   return (
     <footer className="text-white ">
       <div className="relative">
-        <Image className="relative z-0 w-full" src={FooterBg} alt="background" />
+        {/* <Image className="relative z-0 w-full" src={FooterBg} alt="background" /> */}
         <Image
           className="absolute z-10 bottom-[1.6rem] w-full h-auto"
           src={FooterTopBorder}
           alt="border"
         />
       </div>
-      <div className="px-8 py-5 bg-pink-500">
+      <div className="px-8 py-5 bg-[#141C22]">
         <div className="flex flex-col sm:flex-row gap-10 items-center justify-between">
           <div className="flex items-center justify-center">
             <div className="ml-2 w-16 sm:w-20 h-16 sm:h-20">

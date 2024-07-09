@@ -20,15 +20,15 @@ export function SearchBar({ value, placeholder, onChangeValue, isFetching }: Pro
   };
 
   return (
-    <div className="p-1 flex items-center bg-white w-full rounded-full ring ring-blue-400 hover:ring-blue-200 transition-all duration-500">
+    <div className="p-1 flex items-center bg-[#20292F] w-full rounded-full ring ring-[#384B58] hover:ring-blue-200 transition-all duration-500">
       <input
         value={value}
         onChange={onChange}
         type="search"
         placeholder={placeholder}
-        className="p-1 sm:px-4 md:px-5 flex-1 h-10 sm:h-12 font-light rounded-full placeholder:text-gray-600 focus:outline-none"
+        className="p-1 sm:px-4 md:px-5 flex-1 h-10 sm:h-12 font-light rounded-full placeholder:text-gray-600 focus:outline-none bg-[#20292F] text-[#F1F1F1]"
       />
-      <div className="h-10 sm:h-12 w-10 sm:w-12 flex items-center justify-center rounded-full bg-pink-500">
+      <div className="h-10 sm:h-12 w-10 sm:w-12 flex items-center justify-center rounded-full bg-[#019E79]">
         {isFetching && (
           <div className="scale-[30%] sm:scale-[35%]">
             <Spinner classes="invert" />

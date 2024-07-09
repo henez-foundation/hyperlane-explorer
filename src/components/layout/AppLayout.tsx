@@ -20,7 +20,7 @@ export function AppLayout({ pathName, children }: PropsWithChildren<Props>) {
       </Head>
       <div
         style={styles.container}
-        className="relative w-full min-w-screen h-full min-h-screen flex flex-col justify-between bg-blue-500"
+        className="relative w-full min-w-screen h-full min-h-screen flex flex-col justify-between bg-[#141C22]"
       >
         {/* <InfoBanner /> */}
         <Header pathName={pathName} />

@@ -264,7 +264,7 @@ function TransactionDetails({
 function DeliveryStatus({ children }: PropsWithChildren<unknown>) {
   return (
     <>
-      <div className="pb-2 flex-1 flex flex-col items-center justify-center text-gray-700 font-light text-center">
+      <div className="pb-2 flex-1 flex flex-col items-center justify-center text-[#7a7d81] font-light text-center">
         <div className="max-w-sm">{children}</div>
       </div>
     </>
@@ -348,5 +348,5 @@ const helpText = {
 
 const styles = {
   textLink:
-    'text-sm text-gray-500 hover:text-gray-600 active:text-gray-700 underline underline-offset-1 transition-all',
+    'text-sm text-gray-500 hover:text-gray-600 active:text-[#7a7d81] underline underline-offset-1 transition-all',
 };

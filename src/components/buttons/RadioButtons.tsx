@@ -18,7 +18,7 @@ export function RadioButtons({ options, selected, onChange, label }: Props) {
               key={o.value}
               value={o.value}
               className={({ checked }) =>
-                `${checked ? 'bg-blue-500 hover:bg-blue-400' : 'bg-white hover:bg-gray-100'}
+                `${checked ? 'bg-[#019E79] hover:bg-blue-400' : 'bg-white hover:bg-gray-100'}
                     relative flex cursor-pointer px-2 py-1.5 outline-none`
               }
             >
@@ -26,7 +26,7 @@ export function RadioButtons({ options, selected, onChange, label }: Props) {
                 <div className="flex w-full items-center justify-between">
                   <RadioGroup.Label
                     as="p"
-                    className={`text-xs font-medium ${checked ? 'text-white' : 'text-gray-700'}`}
+                    className={`text-xs font-medium ${checked ? 'text-white' : 'text-[#7a7d81]'}`}
                   >
                     {o.display}
                   </RadioGroup.Label>

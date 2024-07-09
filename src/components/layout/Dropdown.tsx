@@ -20,7 +20,7 @@ export function DropdownMenu({
   isFullscreen,
 }: MenuProps) {
   const menuItemsClass = isFullscreen
-    ? `z-50 fixed left-0 right-0 top-20 bottom-0 w-screen bg-blue-500 focus:outline-none ${menuClasses}`
+    ? `z-50 fixed left-0 right-0 top-20 bottom-0 w-screen bg-[#019E79] focus:outline-none ${menuClasses}`
     : `z-50 absolute -right-1.5 mt-3 origin-top-right rounded-md bg-white shadow-md drop-shadow-md focus:outline-none ${menuClasses}`;
 
   return (

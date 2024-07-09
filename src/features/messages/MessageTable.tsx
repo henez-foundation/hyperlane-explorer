@@ -25,15 +25,15 @@ export function MessageTable({
   const multiProvider = useMultiProvider();
 
   return (
-    <table className="w-full mb-1">
+    <table className="w-full mb-1 text-[#F1F1F1]">
       <thead>
-        <tr className="border-b border-gray-100">
-          <th className={`${styles.header} xs:text-left pl-3 sm:pl-6`}>Origin</th>
-          <th className={`${styles.header} xs:text-left pl-1 sm:pl-2`}>Destination</th>
-          <th className={`${styles.header} hidden sm:table-cell`}>Sender</th>
-          <th className={`${styles.header} hidden sm:table-cell`}>Recipient</th>
-          <th className={`${styles.header} hidden lg:table-cell`}>Origin Tx</th>
-          <th className={styles.header}>Time sent</th>
+        <tr className="border-b border-gray-100 ">
+          <th className={`${styles.header} xs:text-left pl-3 sm:pl-6 text-[#818181]`}>Origin</th>
+          <th className={`${styles.header} xs:text-left pl-1 sm:pl-2 text-[#818181]`}>Destination</th>
+          <th className={`${styles.header} hidden sm:table-cell text-[#818181]`}>Sender</th>
+          <th className={`${styles.header} hidden sm:table-cell text-[#818181]`}>Recipient</th>
+          <th className={`${styles.header} hidden lg:table-cell text-[#818181]`}>Origin Tx</th>
+          <th className={`${styles.header} text-[#818181]`}>Time sent</th>
         </tr>
       </thead>
       <tbody>

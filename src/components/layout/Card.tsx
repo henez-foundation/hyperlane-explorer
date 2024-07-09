@@ -8,7 +8,7 @@ interface Props {
 export function Card({ className, padding = 'p-4 sm:p-5', children }: PropsWithChildren<Props>) {
   return (
     <div
-      className={`bg-white ring ring-blue-300 rounded-3xl overflow-auto ${padding} ${className}`}
+      className={`bg-[#20292F] ring ring-[#384B58] rounded-3xl overflow-auto ${padding} ${className}`}
     >
       {children}
     </div>

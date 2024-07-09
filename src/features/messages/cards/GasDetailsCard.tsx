@@ -187,5 +187,5 @@ function computeAvgGasPrice(
 
 const style = {
   th: 'p-1 md:p-2 text-sm text-gray-500 font-normal text-left border border-gray-200 rounded',
-  td: 'p-1 md:p-2 text-xs md:text-sm text-gray-700 text-left border border-gray-200 rounded',
+  td: 'p-1 md:p-2 text-xs md:text-sm text-[#7a7d81] text-left border border-gray-200 rounded',
 };
