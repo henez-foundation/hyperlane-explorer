@@ -128,6 +128,7 @@ export function ConfigureChains() {
         close={closeModal}
         title="Add Custom Chain"
         maxWidth="max-w-xl"
+        className='!bg-[#20292F]'
       >
         <p className="mt-2 font-light">
           Input a chain metadata config including core contract addresses to enable exploration of
@@ -144,7 +145,7 @@ export function ConfigureChains() {
         </p>
         <div className="relative mt-4">
           <textarea
-            className="w-full min-h-[20rem] p-2 border border-gray-400 rounded-xl text-sm font-light focus:outline-none"
+            className="w-full min-h-[20rem] p-2 border border-gray-400 rounded-xl text-sm font-light focus:outline-none bg-transparent"
             placeholder={customChainTextareaPlaceholder}
             value={customChainInput}
             onChange={onCustomChainInputChange}

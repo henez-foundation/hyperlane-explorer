@@ -26,6 +26,7 @@ export function DatetimeField({ timestamp, onChange, name, className }: Props) {
       onChange={handleChange}
       name={name}
       className={`${className} -ml-px`}
+      style={{ colorScheme: 'dark'}}
     />
   );
 }
