@@ -28,7 +28,7 @@ export function MiniSearchBar() {
             name="search"
             type="search"
             placeholder="Hash or address"
-            className="w-32 focus:w-64 py-2 px-2.5 h-8 text-sm font-light placeholder:text-gray-600 rounded-full focus:outline-none transition-[width] ease-in-out duration-500 bg-[#20292F]"
+            className="w-32 focus:w-64 py-2 px-2.5 h-8 text-sm font-light placeholder:text-gray-600 rounded-full focus:outline-none transition-[width] ease-in-out duration-500 bg-[#20292F] text-[#818181]"
           />
           <div className="h-8 w-8 flex items-center justify-center rounded-full bg-[#019E79]">
             <IconButton

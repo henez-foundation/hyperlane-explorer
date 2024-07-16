@@ -37,6 +37,7 @@ export function getChainEnvironment(multiProvider: MultiProvider, chainIdOrName:
 
 export function isPiChain(multiProvider: MultiProvider, chainIdOrName: number | string) {
   const chainName = multiProvider.tryGetChainName(chainIdOrName);
+  if (chainName === 'heneztestnet') return true
   return !chainName || !CoreChains.includes(chainName as CoreChain);
 }
 

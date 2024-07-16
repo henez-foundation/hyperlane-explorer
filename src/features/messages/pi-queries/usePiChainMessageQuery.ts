@@ -1,8 +1,12 @@
 import { useQuery } from '@tanstack/react-query';
 import { IRegistry } from 'henez-hyperlane-registry';
 
+
+
 import { MultiProvider } from '@hyperlane-xyz/sdk';
 import { ensure0x, timeout } from '@hyperlane-xyz/utils';
+
+
 
 import { useReadyMultiProvider, useRegistry } from '../../../store';
 import { Message } from '../../../types';
@@ -11,7 +15,10 @@ import { ChainConfig } from '../../chains/chainConfig';
 import { isEvmChain, isPiChain } from '../../chains/utils';
 import { isValidSearchQuery } from '../queries/useMessageQuery';
 
+
+
 import { PiMessageQuery, PiQueryType, fetchMessagesFromPiChain } from './fetchPiChainMessages';
+
 
 const MESSAGE_SEARCH_TIMEOUT = 10_000; // 10s
 
@@ -50,11 +57,10 @@ export function usePiChainMessageSearchQuery({
       // TODO handle time-based filters here
       const query = { input: ensure0x(sanitizedInput) };
       const allChains = Object.values(multiProvider.metadata);
-      console.log('allChains', allChains);
+
       const piChains = allChains.filter(
         (c) => isEvmChain(multiProvider, c.chainId) && isPiChain(multiProvider, c.chainId),
       );
-      console.log('piChains', piChains);
       try {
         const results = await Promise.allSettled(
           piChains.map((c) => fetchMessages(c, query, multiProvider, registry, piQueryType)),
