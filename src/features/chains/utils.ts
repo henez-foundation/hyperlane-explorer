@@ -1,4 +1,5 @@
-import { CoreChain, CoreChains, IRegistry } from '@hyperlane-xyz/registry';
+import { CoreChain, CoreChains, IRegistry } from 'henez-hyperlane-registry';
+
 import { ChainMap, MultiProvider } from '@hyperlane-xyz/sdk';
 import { ProtocolType, toTitleCase } from '@hyperlane-xyz/utils';
 

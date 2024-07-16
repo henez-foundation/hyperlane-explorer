@@ -1,7 +1,7 @@
+import { GithubRegistry, IRegistry } from 'henez-hyperlane-registry';
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
-import { GithubRegistry, IRegistry } from '@hyperlane-xyz/registry';
 import { ChainMap, MultiProvider } from '@hyperlane-xyz/sdk';
 
 import { ChainConfig } from './features/chains/chainConfig';

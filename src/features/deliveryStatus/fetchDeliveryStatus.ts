@@ -1,7 +1,7 @@
 import { constants } from 'ethers';
+import { IRegistry } from 'henez-hyperlane-registry';
 
 import { IMailbox__factory } from '@hyperlane-xyz/core';
-import { IRegistry } from '@hyperlane-xyz/registry';
 import { ChainMap, MultiProvider } from '@hyperlane-xyz/sdk';
 
 import { DELIVERY_LOG_CHECK_BLOCK_RANGE } from '../../consts/values';
@@ -19,6 +19,7 @@ import {
   MessageDeliveryStatusResponse,
   MessageDeliverySuccessResult,
 } from './types';
+
 
 export async function fetchDeliveryStatus(
   multiProvider: MultiProvider,

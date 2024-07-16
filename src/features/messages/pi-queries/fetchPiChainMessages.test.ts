@@ -1,4 +1,5 @@
-import { GithubRegistry, chainAddresses, chainMetadata } from '@hyperlane-xyz/registry';
+import { GithubRegistry, chainAddresses, chainMetadata } from 'henez-hyperlane-registry';
+
 import { MultiProvider } from '@hyperlane-xyz/sdk';
 
 import { Message, MessageStatus } from '../../../types';

@@ -2097,7 +2097,6 @@ __metadata:
   resolution: "@hyperlane-xyz/explorer@workspace:."
   dependencies:
     "@headlessui/react": "npm:^1.7.17"
-    "@hyperlane-xyz/registry": "npm:2.1.0"
     "@hyperlane-xyz/sdk": "npm:3.13.0"
     "@hyperlane-xyz/utils": "npm:3.13.0"
     "@hyperlane-xyz/widgets": "npm:3.13.1"
@@ -2119,6 +2118,7 @@ __metadata:
     ethers: "npm:^5.7.2"
     formik: "npm:^2.2.9"
     graphql: "npm:^16.6.0"
+    henez-hyperlane-registry: "npm:^2.1.6"
     jest: "npm:^29.6.3"
     next: "npm:^13.4.19"
     nextjs-cors: "npm:^2.1.2"
@@ -2137,16 +2137,6 @@ __metadata:
     zustand: "npm:4.3.8"
   languageName: unknown
   linkType: soft
-
-"@hyperlane-xyz/registry@npm:2.1.0":
-  version: 2.1.0
-  resolution: "@hyperlane-xyz/registry@npm:2.1.0"
-  dependencies:
-    yaml: "npm:^2"
-    zod: "npm:^3.21.2"
-  checksum: cfcd441dcbb4886a4ecd90dffaeb7a0fd81c0a126423b23cf100cd554470fe88ceb35b41271d779f0390c42293fd2c799742eeff6dd42ca42f3c799a8e88b96b
-  languageName: node
-  linkType: hard
 
 "@hyperlane-xyz/sdk@npm:3.13.0":
   version: 3.13.0
@@ -7638,6 +7628,16 @@ __metadata:
     inherits: "npm:^2.0.3"
     minimalistic-assert: "npm:^1.0.1"
   checksum: 0c89ee4006606a40f92df5cc3c263342e7fea68110f3e9ef032bd2083650430505db01b6b7926953489517d4027535e4fdc7f970412893d3031c361d3ec8f4b3
+  languageName: node
+  linkType: hard
+
+"henez-hyperlane-registry@npm:^2.1.6":
+  version: 2.1.6
+  resolution: "henez-hyperlane-registry@npm:2.1.6"
+  dependencies:
+    yaml: "npm:^2"
+    zod: "npm:^3.21.2"
+  checksum: 80301d0209d29530e277f45d15e2fa74360a4baefd4f8336581b9f071c133fdf59332e5c0d88cbdc5925688804c2bb4f3e7a492eb9dea461e92f829300005965
   languageName: node
   linkType: hard
 

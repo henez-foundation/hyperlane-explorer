@@ -1,4 +1,5 @@
-import { GithubRegistry } from '@hyperlane-xyz/registry';
+import { GithubRegistry } from 'henez-hyperlane-registry';
+
 import { MultiProvider } from '@hyperlane-xyz/sdk';
 
 export function successResult<R>(data: R): { success: true; data: R } {

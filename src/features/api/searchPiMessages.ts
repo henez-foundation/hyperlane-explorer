@@ -1,7 +1,7 @@
+import { GithubRegistry } from 'henez-hyperlane-registry';
 import type { NextApiRequest } from 'next';
 import { z } from 'zod';
 
-import { GithubRegistry } from '@hyperlane-xyz/registry';
 import { MultiProvider } from '@hyperlane-xyz/sdk';
 
 import { logger } from '../../utils/logger';
@@ -11,8 +11,11 @@ import {
   fetchMessagesFromPiChain,
 } from '../messages/pi-queries/fetchPiChainMessages';
 
+
+
 import { ApiHandlerResult, ApiMessage } from './types';
 import { failureResult, successResult } from './utils';
+
 
 const queryParamSchema = z.object({
   query: z.string(),

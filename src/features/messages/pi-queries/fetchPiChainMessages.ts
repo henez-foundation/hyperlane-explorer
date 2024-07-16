@@ -1,7 +1,7 @@
 import { BigNumber, constants, ethers, providers } from 'ethers';
+import { IRegistry } from 'henez-hyperlane-registry';
 
 import { IInterchainGasPaymaster__factory, Mailbox__factory } from '@hyperlane-xyz/core';
-import { IRegistry } from '@hyperlane-xyz/registry';
 import { MultiProvider } from '@hyperlane-xyz/sdk';
 import {
   ProtocolType,
@@ -18,6 +18,7 @@ import { PI_MESSAGE_LOG_CHECK_BLOCK_RANGE } from '../../../consts/values';
 import { ExtendedLog, Message, MessageStatus } from '../../../types';
 import { logger } from '../../../utils/logger';
 import { ChainConfig } from '../../chains/chainConfig';
+
 
 const mailbox = Mailbox__factory.createInterface();
 const dispatchTopic0 = mailbox.getEventTopic('Dispatch');

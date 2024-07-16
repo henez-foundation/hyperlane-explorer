@@ -1,6 +1,7 @@
 // Forked from debug script in monorepo but mostly rewritten
 // https://github.com/hyperlane-xyz/hyperlane-monorepo/blob/main/typescript/infra/scripts/debug-message.ts
 import { BigNumber, utils as ethersUtils, providers } from 'ethers';
+import { IRegistry } from 'henez-hyperlane-registry';
 
 import {
   IInterchainSecurityModule__factory,
@@ -9,7 +10,6 @@ import {
   IMultisigIsm__factory,
   InterchainGasPaymaster__factory,
 } from '@hyperlane-xyz/core';
-import { IRegistry } from '@hyperlane-xyz/registry';
 import { ChainMap, MAILBOX_VERSION, MultiProvider } from '@hyperlane-xyz/sdk';
 import {
   addressToBytes32,
