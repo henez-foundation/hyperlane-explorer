@@ -1,4 +1,5 @@
 // Partly copied from https://github.com/hyperlane-xyz/hyperlane-website/blob/main/src/components/nav/Footer.tsx
+import { Orbitron } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -9,9 +10,14 @@ import FooterTopBorder from '../../images/backgrounds/footer-top-border.svg';
 import { Color } from '../../styles/Color';
 import { Discord } from '../icons/Discord';
 import { Github } from '../icons/Github';
-import { HyperlaneLogo } from '../icons/HyperlaneLogo';
+import { HenezLogo } from '../icons/HenezLogo';
 import { Medium } from '../icons/Medium';
 import { Twitter } from '../icons/Twitter';
+
+const orbitronFont = Orbitron({
+  weight: '400',
+  subsets: ['latin'],
+});
 
 const footerLinks1 = [
   { title: 'Docs', url: docLinks.home, external: true },
@@ -46,12 +52,16 @@ export function Footer() {
       <div className="px-8 py-5 bg-[#141C22]">
         <div className="flex flex-col sm:flex-row gap-10 items-center justify-between">
           <div className="flex items-center justify-center">
-            <div className="ml-2 w-16 sm:w-20 h-16 sm:h-20">
-              <HyperlaneLogo fill={Color.White} />
+            <div className="">
+              <HenezLogo fill={Color.White} width={80} height={80} />
             </div>
             <div className="text-xl sm:text-2xl font-medium ml-6 space-y-1 ">
-              <div>Go Interchain</div>
-              <div>With Hyperlane</div>
+              <div>
+                Abstracted <span className="text-[#019e79]">Liquidity</span>
+              </div>
+              <div>
+                With <span className={`${orbitronFont.className}`} style={{letterSpacing: 4}}>Henez</span>
+              </div>
             </div>
             {/* <div className="absolute">
             <div className="hidden sm:block">
