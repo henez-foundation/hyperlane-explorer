@@ -52,7 +52,7 @@ export function Footer() {
             <div className="text-xl sm:text-2xl font-medium ml-6 space-y-1 ">
               <div>Abstracted Liquidity</div>
               <div>
-                With <span className="text-[#019e79]">Henez</span>
+                With <span className="font-bold text-3xl text-[#019e79]">Henez</span>
               </div>
             </div>
             {/* <div className="absolute">
