@@ -1,5 +1,4 @@
 // Partly copied from https://github.com/hyperlane-xyz/hyperlane-website/blob/main/src/components/nav/Footer.tsx
-import { Orbitron } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -13,11 +12,6 @@ import { Github } from '../icons/Github';
 import { HenezLogo } from '../icons/HenezLogo';
 import { Medium } from '../icons/Medium';
 import { Twitter } from '../icons/Twitter';
-
-const orbitronFont = Orbitron({
-  weight: '400',
-  subsets: ['latin'],
-});
 
 const footerLinks1 = [
   { title: 'Docs', url: docLinks.home, external: true },
@@ -56,11 +50,9 @@ export function Footer() {
               <HenezLogo fill={Color.White} width={80} height={80} />
             </div>
             <div className="text-xl sm:text-2xl font-medium ml-6 space-y-1 ">
+              <div>Abstracted Liquidity</div>
               <div>
-                Abstracted <span className="text-[#019e79]">Liquidity</span>
-              </div>
-              <div>
-                With <span className={`${orbitronFont.className}`} style={{letterSpacing: 4}}>Henez</span>
+                With <span className="text-[#019e79]">Henez</span>
               </div>
             </div>
             {/* <div className="absolute">
